@@ -1,0 +1,166 @@
+/*general*/
+@font-face {
+font-family: SegoeUI;
+src:
+local("Segoe UI Light"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+font-weight: 100;
+}
+
+@font-face {
+font-family: SegoeUI;
+src:
+local("Segoe UI Semilight"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+font-weight: 200;
+}
+
+@font-face {
+font-family: SegoeUI;
+src:
+local("Segoe UI"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+font-weight: 400;
+}
+
+@font-face {
+font-family: SegoeUI;
+src:
+local("Segoe UI Bold"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+font-weight: 600;
+}
+
+@font-face {
+font-family: SegoeUI;
+src:
+local("Segoe UI Semibold"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+font-weight: 700;
+}
+body{
+  font-family: "Segoe UI", arial, sans-serif;
+  color: #ffffff;
+}
+p{font-size: 1rem;}
+h1{
+  font-family: "Segoe UI Light";
+}
+.bg-dark{
+  background-color: #434e55;
+  opacity: 0.8;
+}
+.ligne-deco:after{
+  content:"";
+  border-bottom: 2px solid;
+  width: 50px;
+  position: absolute;
+  color: white;
+}
+/*navbar*/
+.nav-link:hover{
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+}
+header{
+  background-image: url("ressource/blueasy-freebie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+h2{
+  font-family: "segoe UI light";
+}
+.header-text{
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+/*portfolio*/
+.img-portfolio{
+  height: 270px;
+  width: 270px;
+  max-height: 270px;
+  max-width: 270px;
+  position: relative;
+}
+.hover-portfolio{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.8);
+}
+.hover-portfolio:hover{
+  opacity: 1;
+}
+.hover-text{
+  text-align: center;
+ position: absolute;
+ top: 75%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 5em;
+ color: white;
+ height: 100%;
+ width: 100%;
+}
+/*twitter*/
+.object-contain{
+  object-fit: contain;
+}
+.text-twitter{
+  font-size: 1.6rem;
+  font-family: "Segoe UI Light";
+}
+/*who is john doe*/
+.who-is-bg{
+  background-image: url(ressource/blueasy-bg-whois.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*testimonial*/
+.text-testi{
+  color: grey;
+}
+.ligne-deco-grey:after{
+  content:"";
+  border-bottom: 2px solid;
+  width: 50px;
+  position: absolute;
+  color: grey;
+}
+/*Contact*/
+.bg-dark-1{
+  background-image: url(ressource/blueasy-bg-contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.form-control{
+  opacity: 0.2;
+  height: 60px;
+}
+.form-control-2{
+  height: 220px;
+}
+/*footer*/
+.bg-dark-2{
+  background-color: #353f47;
+}
+.nav-Link-2{
+  color: #515f67;
+}
